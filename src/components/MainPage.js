@@ -46,7 +46,7 @@ function Connector({ connector, active }) {
         setPrice(price);
       }
     );
-  }, []);
+  }, [connector]);
 
   function handleConnection() {
     if (connected.current) {
@@ -123,7 +123,7 @@ function Station({ station }) {
         setConnectors(connectors);
       }
     );
-  }, [])
+  }, [station])
 
   return (
     <div className="py-10">
